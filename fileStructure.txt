@@ -1,0 +1,14 @@
+Input files:
+[a_plant.cif]              Code for EFSA plant model
+[b_requirement.cif]        Code for state-based requirements, imports [a_plant.cif]
+[c_simulation.cif]         Code for hybrid plant model, imports [d_visualization.cif] 
+[d_visualization.cif]      Code for link between hybrid plant model and SVG visualisation 
+[e_svg_visualization.svg]  SVG visualisation of the moveable bridge
+
+Output files:
+[f_supervisor.cif]         Synthesized supervisor using [Synthesis.tooldef2]
+[g_supervisor_hybrid.cif]  Merge of [c_simulation.cif] and [f_supervisor.cif], using [Simulation.tooldef2]
+
+Executable files:
+[Synthesis.tooldef2]       Execute to synthesise [f_Supervisor.cif] from [b_requirement.cif]
+[Simulation.tooldef2]      Execute to generate and simulate [g_Supervisor_Hybrid.cif]
