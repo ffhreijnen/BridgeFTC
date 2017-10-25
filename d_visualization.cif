@@ -1,0 +1,120 @@
+svgfile "e_svg_visualization.svg";
+import  "c_simulation.cif";
+
+//Used to represent the buttons + input.
+//First input: svgID, second input: bool that represents on/off status,
+//third input: push event, fourth input: release event.
+group def buttonvis(alg string svginid, svgoutid; alg bool pushed; uncontrollable u_pushed, u_released):
+    svgin  id svginid  event if pushed: u_released else u_pushed end;
+    svgout id svgoutid attr "fill" value if pushed: "yellowgreen" else "indianred" end;
+end
+
+//Used to represent the signs
+//first input: svgID of lamp, second input: color of the lamp
+//third input: bool that represents on/off status
+group def signlight(alg string svgoutid, color; alg bool on):
+    svgout id svgoutid attr "fill" value if on: color else "grey" end;
+end
+
+// used to represent traffic barriers
+// first input: svgID of traffic barrier, second input: bool that describes closed state
+// third and fourth input: opacities for visualization
+group def trafficbarrier(alg string svgoutid; alg bool b; alg real opacity_closed, opacity_opened):
+    svgout id svgoutid attr "fill-opacity"   value if b: opacity_closed else opacity_opened end;
+    svgout id svgoutid attr "stroke-opacity" value if b: opacity_closed else opacity_opened end;
+end
+
+// used to represent the bridge deck
+// input a - m: svgID's of bridgedeck segments. input closed: bool that describes closed state.
+// last two inputs: opacities for visualization
+group def bridgedeckV(alg string b, c, d, e, h, i, j, k, l, m; alg bool closed; alg real opacity_closed, opacity_opened):
+    svgout id b attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id c attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id d attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id e attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id h attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id i attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id j attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id k attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id l attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id m attr "fill-opacity"   value if closed: opacity_closed else opacity_opened end;
+    svgout id b attr "stroke-opacity" value if closed: opacity_closed else opacity_opened end;
+    svgout id c attr "stroke-opacity" value if closed: opacity_closed else opacity_opened end;
+    svgout id d attr "stroke-opacity" value if closed: opacity_closed else opacity_opened end;
+    svgout id e attr "stroke-opacity" value if closed: opacity_closed else opacity_opened end;
+end
+
+// initiate all graphics
+button_LTS_on                     : buttonvis("button1",  "button1V",  LTS.button_on.pushed,                  LTS.button_on.u_pushed,                  LTS.button_on.u_released);
+button_entering_barriers_CK_close : buttonvis("button2",  "button2V",  barriers.button_close_entering.pushed, barriers.button_close_entering.u_pushed, barriers.button_close_entering.u_released);
+button_entering_barriers_CK_open  : buttonvis("button3",  "button3V",  barriers.button_open_entering.pushed,  barriers.button_open_entering.u_pushed,  barriers.button_open_entering.u_released);
+button_entering_barriers_CK_stop  : buttonvis("button4",  "button4V",  barriers.button_stop_entering.pushed,  barriers.button_stop_entering.u_pushed,  barriers.button_stop_entering.u_released);
+button_leaving_barriers_CK_close  : buttonvis("button5",  "button5V",  barriers.button_close_leaving.pushed,  barriers.button_close_leaving.u_pushed,  barriers.button_close_leaving.u_released);
+button_leaving_barriers_CK_open   : buttonvis("button6",  "button6V",  barriers.button_open_leaving.pushed,   barriers.button_open_leaving.u_pushed,   barriers.button_open_leaving.u_released);
+button_leaving_barriers_CK_stop   : buttonvis("button7",  "button7V",  barriers.button_stop_leaving.pushed,   barriers.button_stop_leaving.u_pushed,   barriers.button_stop_leaving.u_released);
+button_slow_barriers_CK_close     : buttonvis("button14", "button14V", barriers.button_close_slow.pushed,     barriers.button_close_slow.u_pushed,     barriers.button_close_slow.u_released);
+button_slow_barriers_CK_open      : buttonvis("button15", "button15V", barriers.button_open_slow.pushed,      barriers.button_open_slow.u_pushed,      barriers.button_open_slow.u_released);
+button_slow_barriers_CK_stop      : buttonvis("button16", "button16V", barriers.button_stop_slow.pushed,      barriers.button_stop_slow.u_pushed,      barriers.button_stop_slow.u_released);
+button_bridge_open                : buttonvis("button17", "button17V", bridgedeck.button_open.pushed,         bridgedeck.button_open.u_pushed,         bridgedeck.button_open.u_released);
+button_bridge_close               : buttonvis("button18", "button18V", bridgedeck.button_close.pushed,        bridgedeck.button_close.u_pushed,        bridgedeck.button_close.u_released);
+button_bridge_stop                : buttonvis("button19", "button19V", bridgedeck.button_stop.pushed,         bridgedeck.button_stop.u_pushed,         bridgedeck.button_stop.u_released);
+button_upstream_rd                : buttonvis("button20", "button20V", shipping_signs.upstream.button_red.pushed,       shipping_signs.upstream.button_red.u_pushed,        shipping_signs.upstream.button_red.u_released);
+button_upstream_gn                : buttonvis("button21", "button21V", shipping_signs.upstream.button_green.pushed,     shipping_signs.upstream.button_green.u_pushed,      shipping_signs.upstream.button_green.u_released);
+button_upstream_rdgn              : buttonvis("button22", "button22V", shipping_signs.upstream.button_redgreen.pushed,  shipping_signs.upstream.button_redgreen.u_pushed,   shipping_signs.upstream.button_redgreen.u_released);
+button_downstream_rd              : buttonvis("button23", "button23V", shipping_signs.downstream.button_red.pushed,     shipping_signs.downstream.button_red.u_pushed,      shipping_signs.downstream.button_red.u_released);
+button_downstream_gn              : buttonvis("button24", "button24V", shipping_signs.downstream.button_green.pushed,   shipping_signs.downstream.button_green.u_pushed,    shipping_signs.downstream.button_green.u_released);
+button_downstream_rdgn            : buttonvis("button25", "button25V", shipping_signs.downstream.button_redgreen.pushed,shipping_signs.downstream.button_redgreen.u_pushed, shipping_signs.downstream.button_redgreen.u_released);
+button_upstream_sp                : buttonvis("button26", "button26V", shipping_signs.upstream.button_redred.pushed,    shipping_signs.upstream.button_redred.u_pushed,     shipping_signs.upstream.button_redred.u_released);
+button_downstream_sp              : buttonvis("button27", "button27V", shipping_signs.downstream.button_redred.pushed,  shipping_signs.downstream.button_redred.u_pushed,   shipping_signs.downstream.button_redred.u_released);
+
+// pre sign visualisation
+presign_C_100 : signlight("presign1", "orange", LTS.presigns.ps1.S.o);
+presign_C_200 : signlight("presign2", "orange", LTS.presigns.ps2.S.o);
+presign_C_500 : signlight("presign3", "orange", LTS.presigns.ps3.S.o);
+presign_K_150 : signlight("presign4", "orange", LTS.presigns.ps4.S.o);
+presign_K_250 : signlight("presign5", "orange", LTS.presigns.ps5.S.o);
+presign_K_300 : signlight("presign6", "orange", LTS.presigns.ps6.S.o);
+
+// stop sign visualisation
+stopsign5  : signlight("stopsign1", "red", LTS.stopsigns.stop1.S.o);
+stopsign6  : signlight("stopsign2", "red", LTS.stopsigns.stop2.S.o);
+stopsign7  : signlight("stopsign3", "red", LTS.stopsigns.stop3.S.o);
+stopsign8  : signlight("stopsign4", "red", LTS.stopsigns.stop4.S.o);
+stopsign9  : signlight("stopsign5", "red", LTS.stopsigns.stop5.S.o);
+stopsign10 : signlight("stopsign6", "red", LTS.stopsigns.stop6.S.o);
+stopsign11 : signlight("stopsign7", "red", LTS.stopsigns.stop7.S.o);
+stopsign12 : signlight("stopsign8", "red", LTS.stopsigns.stop8.S.o);
+
+// shipping traffic sign visualisation
+uit1 : signlight("shippingsign_downstream_l_r", "red",   shipping_signs.downstream.N.S_R.o);
+uit2 : signlight("shippingsign_downstream_l_g", "green", shipping_signs.downstream.N.S_G.o);
+uit2b: signlight("shippingsign_downstream_l_s", "red",   shipping_signs.downstream.N.S_S.o);
+
+uit3 : signlight("shippingsign_downstream_r_r", "red",   shipping_signs.downstream.S.S_R.o);
+uit4 : signlight("shippingsign_downstream_r_g", "green", shipping_signs.downstream.S.S_G.o);
+uit4b: signlight("shippingsign_downstream_r_s", "red",   shipping_signs.downstream.S.S_S.o);
+
+uit5 : signlight("shippingsign_upstream_l_r", "red",   shipping_signs.upstream.N.S_R.o);
+uit6 : signlight("shippingsign_upstream_l_g", "green", shipping_signs.upstream.N.S_G.o);
+uit6b: signlight("shippingsign_upstream_l_s", "red",   shipping_signs.upstream.N.S_S.o);
+
+uit7 : signlight("shippingsign_upstream_r_r", "red",   shipping_signs.upstream.S.S_R.o);
+uit8 : signlight("shippingsign_upstream_r_g", "green", shipping_signs.upstream.S.S_G.o);
+uit8b: signlight("shippingsign_upstream_r_s", "red",   shipping_signs.upstream.S.S_S.o);
+
+// traffic barriers visualisation
+barrier1f : trafficbarrier("barrier1f", barriers.barrier1.S.c,  100, 0);
+barrier1m : trafficbarrier("barrier1m", not(barriers.barrier1.S.c or barriers.barrier1.S.o), 100, 0);
+barrier3f : trafficbarrier("barrier3f", barriers.barrier5.S.c,  100, 0);
+barrier3m : trafficbarrier("barrier3m", not(barriers.barrier5.S.c or barriers.barrier5.S.o), 100, 0);
+barrier4f : trafficbarrier("barrier4f", barriers.barrier3.S.c, 100, 0);
+barrier4m : trafficbarrier("barrier4m", not(barriers.barrier3.S.c or barriers.barrier3.S.o), 100, 0);
+barrier6f : trafficbarrier("barrier6f", barriers.barrier2.S.c, 100, 0);
+barrier6m : trafficbarrier("barrier6m", not(barriers.barrier2.S.c or barriers.barrier2.S.o), 100, 0);
+barrier7f : trafficbarrier("barrier7f", barriers.barrier4.S.c, 100, 0);
+barrier7m : trafficbarrier("barrier7m", not(barriers.barrier4.S.c or barriers.barrier4.S.o), 100, 0);
+barrier8f : trafficbarrier("barrier8f", barriers.barrier6.S.c, 100, 0);
+barrier8m : trafficbarrier("barrier8m", not(barriers.barrier6.S.c or barriers.barrier6.S.o), 100, 0);
+
+// bridge deck visualisation
+deck1 : bridgedeckV("bridgedeck_KC", "bridgedeck_CK", "bridgedeck_bike", "bridgedeck_pedestrian", "arrow_KC","arrow_CK","arrow_bike_left","arrow_bike_right","arrow_pedestrian_left","arrow_pedestrian_right", bridgedeck.position.c , 100 , 0);
