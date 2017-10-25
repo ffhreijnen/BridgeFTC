@@ -1,0 +1,2264 @@
+group LTS:
+  group button_on:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group presigns:
+    group ps1:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group ps2:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group ps3:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group ps4:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group ps5:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group ps6:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+  end
+  group stopsigns:
+    group stop1:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group stop2:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group stop3:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group stop4:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group stop5:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group stop6:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group stop7:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+    group stop8:
+      uncontrollable u_on;
+      uncontrollable u_off;
+      controllable c_on;
+      controllable c_off;
+    end
+  end
+end
+group barriers:
+  group barrier1:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    controllable c_open;
+    controllable c_close;
+    controllable c_stop;
+  end
+  group barrier2:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    controllable c_open;
+    controllable c_close;
+    controllable c_stop;
+  end
+  group barrier3:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    controllable c_open;
+    controllable c_close;
+    controllable c_stop;
+  end
+  group barrier4:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    controllable c_open;
+    controllable c_close;
+    controllable c_stop;
+  end
+  group barrier5:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    controllable c_open;
+    controllable c_close;
+    controllable c_stop;
+  end
+  group barrier6:
+    uncontrollable u_closed_on;
+    uncontrollable u_closed_off;
+    uncontrollable u_open_on;
+    uncontrollable u_open_off;
+    controllable c_open;
+    controllable c_close;
+    controllable c_stop;
+  end
+  group button_close_entering:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_stop_entering:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_open_entering:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_close_leaving:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_stop_leaving:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_open_leaving:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_close_slow:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_stop_slow:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_open_slow:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+end
+group shipping_signs:
+  group upstream:
+    group button_red:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group button_redgreen:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group button_green:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group button_redred:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group N:
+      uncontrollable u_red_off;
+      uncontrollable u_red_on;
+      uncontrollable u_green_off;
+      uncontrollable u_green_on;
+      uncontrollable u_red2_on;
+      uncontrollable u_red2_off;
+      controllable c_red;
+      controllable c_green;
+      controllable c_redgreen;
+      controllable c_redred;
+    end
+    group S:
+      uncontrollable u_red_off;
+      uncontrollable u_red_on;
+      uncontrollable u_green_off;
+      uncontrollable u_green_on;
+      uncontrollable u_red2_on;
+      uncontrollable u_red2_off;
+      controllable c_red;
+      controllable c_green;
+      controllable c_redgreen;
+      controllable c_redred;
+    end
+  end
+  group downstream:
+    group button_red:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group button_redgreen:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group button_green:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group button_redred:
+      uncontrollable u_pushed;
+      uncontrollable u_released;
+    end
+    group N:
+      uncontrollable u_red_off;
+      uncontrollable u_red_on;
+      uncontrollable u_green_off;
+      uncontrollable u_green_on;
+      uncontrollable u_red2_on;
+      uncontrollable u_red2_off;
+      controllable c_red;
+      controllable c_green;
+      controllable c_redgreen;
+      controllable c_redred;
+    end
+    group S:
+      uncontrollable u_red_off;
+      uncontrollable u_red_on;
+      uncontrollable u_green_off;
+      uncontrollable u_green_on;
+      uncontrollable u_red2_on;
+      uncontrollable u_red2_off;
+      controllable c_red;
+      controllable c_green;
+      controllable c_redgreen;
+      controllable c_redred;
+    end
+  end
+end
+group bridgedeck:
+  uncontrollable u_open_on;
+  uncontrollable u_open_off;
+  uncontrollable u_closed_on;
+  uncontrollable u_closed_off;
+  controllable c_open;
+  controllable c_close;
+  controllable c_stop;
+  group button_open:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_stop:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+  group button_close:
+    uncontrollable u_pushed;
+    uncontrollable u_released;
+  end
+end
+group FTC:
+  group D:
+    uncontrollable f1;
+    uncontrollable f2;
+    uncontrollable f3;
+    uncontrollable f4;
+    uncontrollable f5;
+    uncontrollable f6;
+    uncontrollable f7;
+    uncontrollable f8;
+    uncontrollable f9;
+    uncontrollable f10;
+    uncontrollable f11;
+    uncontrollable f12;
+    uncontrollable f13;
+    uncontrollable f14;
+    uncontrollable f15;
+    uncontrollable f16;
+    uncontrollable f17;
+    uncontrollable f18;
+    uncontrollable f19;
+    uncontrollable f20;
+    uncontrollable f25;
+    uncontrollable r15;
+    uncontrollable r16;
+    uncontrollable r17;
+    uncontrollable r18;
+    uncontrollable r19;
+    uncontrollable r20;
+  end
+end
+group sup:
+  group safety_reqirements:
+    group Requirement1:
+      alg bool Fault1 = FTC.D.ps1_f or FTC.D.ps2_f or FTC.D.ps3_f;
+      alg bool Fault2 = FTC.D.ps4_f or FTC.D.ps5_f or FTC.D.ps6_f;
+      alg bool Fault3 = FTC.D.bridge_f;
+      group Nominal:
+        requirement invariant .LTS.stopsigns.stop1.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+        requirement invariant .LTS.stopsigns.stop2.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+        requirement invariant .LTS.stopsigns.stop3.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+        requirement invariant .LTS.stopsigns.stop4.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+        requirement invariant .LTS.stopsigns.stop5.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+        requirement invariant .LTS.stopsigns.stop6.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+        requirement invariant .LTS.stopsigns.stop7.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+        requirement invariant .LTS.stopsigns.stop8.c_on needs not Fault3 => (not Fault1 => LTS.presigns.C_on) and (not Fault2 => LTS.presigns.K_on);
+      end
+      group PostFault1or2:
+        requirement invariant .LTS.stopsigns.stop1.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+        requirement invariant .LTS.stopsigns.stop2.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+        requirement invariant .LTS.stopsigns.stop3.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+        requirement invariant .LTS.stopsigns.stop4.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+        requirement invariant .LTS.stopsigns.stop5.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+        requirement invariant .LTS.stopsigns.stop6.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+        requirement invariant .LTS.stopsigns.stop7.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+        requirement invariant .LTS.stopsigns.stop8.c_on needs not Fault3 => (Fault1 => LTS.presigns.C_onF) and (Fault2 => LTS.presigns.K_onF);
+      end
+      group PostFault3:
+        requirement invariant .LTS.stopsigns.stop1.c_on needs Fault3 => true;
+        requirement invariant .LTS.stopsigns.stop2.c_on needs Fault3 => true;
+        requirement invariant .LTS.stopsigns.stop3.c_on needs Fault3 => true;
+        requirement invariant .LTS.stopsigns.stop4.c_on needs Fault3 => true;
+        requirement invariant .LTS.stopsigns.stop5.c_on needs Fault3 => true;
+        requirement invariant .LTS.stopsigns.stop6.c_on needs Fault3 => true;
+        requirement invariant .LTS.stopsigns.stop7.c_on needs Fault3 => true;
+        requirement invariant .LTS.stopsigns.stop8.c_on needs Fault3 => true;
+      end
+    end
+    group Requirement2:
+      alg bool Fault1 = FTC.D.s1_f or FTC.D.s2_f;
+      alg bool Fault2 = FTC.D.s3_f or FTC.D.s4_f;
+      alg bool Fault3 = FTC.D.s5_f or FTC.D.s6_f;
+      alg bool Fault4 = FTC.D.s7_f or FTC.D.s8_f;
+      group Nominal:
+        requirement invariant .barriers.barrier3.c_close needs (not Fault1 => LTS.stopsigns.C_on) and (not Fault2 => LTS.stopsigns.K_on) and (not Fault3 => LTS.stopsigns.SC_on) and (not Fault4 => LTS.stopsigns.SK_on);
+        requirement invariant .barriers.barrier2.c_close needs (not Fault1 => LTS.stopsigns.C_on) and (not Fault2 => LTS.stopsigns.K_on) and (not Fault3 => LTS.stopsigns.SC_on) and (not Fault4 => LTS.stopsigns.SK_on);
+        requirement invariant .barriers.barrier5.c_close needs (not Fault1 => LTS.stopsigns.C_on) and (not Fault2 => LTS.stopsigns.K_on) and (not Fault3 => LTS.stopsigns.SC_on) and (not Fault4 => LTS.stopsigns.SK_on);
+        requirement invariant .barriers.barrier6.c_close needs (not Fault1 => LTS.stopsigns.C_on) and (not Fault2 => LTS.stopsigns.K_on) and (not Fault3 => LTS.stopsigns.SC_on) and (not Fault4 => LTS.stopsigns.SK_on);
+      end
+      group PostFault:
+        requirement invariant .barriers.barrier2.c_close needs (Fault1 => LTS.stopsigns.C_onF) and (Fault2 => LTS.stopsigns.K_onF) and (Fault3 => LTS.stopsigns.SC_onF) and (Fault4 => LTS.stopsigns.SK_onF);
+        requirement invariant .barriers.barrier3.c_close needs (Fault1 => LTS.stopsigns.C_onF) and (Fault2 => LTS.stopsigns.K_onF) and (Fault3 => LTS.stopsigns.SC_onF) and (Fault4 => LTS.stopsigns.SK_onF);
+        requirement invariant .barriers.barrier5.c_close needs (Fault1 => LTS.stopsigns.C_onF) and (Fault2 => LTS.stopsigns.K_onF) and (Fault3 => LTS.stopsigns.SC_onF) and (Fault4 => LTS.stopsigns.SK_onF);
+        requirement invariant .barriers.barrier6.c_close needs (Fault1 => LTS.stopsigns.C_onF) and (Fault2 => LTS.stopsigns.K_onF) and (Fault3 => LTS.stopsigns.SC_onF) and (Fault4 => LTS.stopsigns.SK_onF);
+      end
+    end
+    group Requirement3:
+      group Nominal:
+        requirement invariant .barriers.barrier1.c_close needs barriers.entering_closed;
+        requirement invariant .barriers.barrier4.c_close needs barriers.entering_closed;
+      end
+    end
+    group Requirement4:
+      group Nominal:
+        requirement invariant .bridgedeck.c_open needs barriers.entering_closed and barriers.leaving_closed and barriers.slow_closed;
+      end
+    end
+    group Requirement5:
+      group Nominal:
+        requirement invariant .shipping_signs.upstream.N.c_green needs bridgedeck.bridgedeck_up;
+        requirement invariant .shipping_signs.upstream.S.c_green needs bridgedeck.bridgedeck_up;
+        requirement invariant .shipping_signs.downstream.N.c_green needs bridgedeck.bridgedeck_up;
+        requirement invariant .shipping_signs.downstream.S.c_green needs bridgedeck.bridgedeck_up;
+      end
+    end
+    group Requirement6:
+      group Nominal:
+        requirement invariant .bridgedeck.c_close needs shipping_signs.RedOrRedRed;
+      end
+    end
+    group Requirement7:
+      group Nominal:
+        requirement invariant .barriers.barrier1.c_open needs bridgedeck.bridgedeck_closed;
+        requirement invariant .barriers.barrier2.c_open needs bridgedeck.bridgedeck_closed;
+        requirement invariant .barriers.barrier3.c_open needs bridgedeck.bridgedeck_closed;
+        requirement invariant .barriers.barrier4.c_open needs bridgedeck.bridgedeck_closed;
+        requirement invariant .barriers.barrier5.c_open needs bridgedeck.bridgedeck_closed;
+        requirement invariant .barriers.barrier6.c_open needs bridgedeck.bridgedeck_closed;
+      end
+    end
+    group Requirement8:
+      alg bool Fault1 = FTC.D.bar1_f;
+      alg bool Fault2 = FTC.D.bar4_f;
+      group Nominal:
+        requirement invariant .barriers.barrier2.c_open needs (not Fault1 => barriers.barrier1.open) and (not Fault2 => barriers.barrier4.open);
+        requirement invariant .barriers.barrier3.c_open needs (not Fault1 => barriers.barrier1.open) and (not Fault2 => barriers.barrier4.open);
+      end
+      group PostFault:
+        requirement invariant .barriers.barrier2.c_open needs (Fault1 => false) and (Fault2 => true);
+        requirement invariant .barriers.barrier3.c_open needs (Fault1 => true) and (Fault2 => false);
+      end
+    end
+    group Requirement9:
+      alg bool Fault1 = FTC.D.bar1_f or FTC.D.bar2_f;
+      alg bool Fault2 = FTC.D.bar3_f or FTC.D.bar4_f;
+      alg bool Fault3 = FTC.D.bar5_f or FTC.D.bar6_f;
+      group Nominal:
+        requirement invariant .LTS.stopsigns.stop1.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+        requirement invariant .LTS.stopsigns.stop2.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+        requirement invariant .LTS.stopsigns.stop3.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+        requirement invariant .LTS.stopsigns.stop4.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+        requirement invariant .LTS.stopsigns.stop5.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+        requirement invariant .LTS.stopsigns.stop6.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+        requirement invariant .LTS.stopsigns.stop7.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+        requirement invariant .LTS.stopsigns.stop8.c_off needs (not Fault1 => barriers.KtoC_open) and (not Fault2 => barriers.CtoK_open) and (not Fault3 => barriers.slow_open);
+      end
+      group PostFault:
+        requirement invariant .LTS.stopsigns.stop3.c_off needs (Fault1 => false) and (Fault2 => true) and (Fault3 => true);
+        requirement invariant .LTS.stopsigns.stop4.c_off needs (Fault1 => false) and (Fault2 => true) and (Fault3 => true);
+        requirement invariant .LTS.stopsigns.stop1.c_off needs (Fault1 => true) and (Fault2 => false) and (Fault3 => true);
+        requirement invariant .LTS.stopsigns.stop2.c_off needs (Fault1 => true) and (Fault2 => false) and (Fault3 => true);
+        requirement invariant .LTS.stopsigns.stop5.c_off needs (Fault1 => true) and (Fault2 => true) and (Fault3 => false);
+        requirement invariant .LTS.stopsigns.stop6.c_off needs (Fault1 => true) and (Fault2 => true) and (Fault3 => false);
+        requirement invariant .LTS.stopsigns.stop7.c_off needs (Fault1 => true) and (Fault2 => true) and (Fault3 => false);
+        requirement invariant .LTS.stopsigns.stop8.c_off needs (Fault1 => true) and (Fault2 => true) and (Fault3 => false);
+      end
+    end
+    group Requirement10:
+      alg bool Fault1 = FTC.D.bar1_f or FTC.D.bar2_f;
+      alg bool Fault2 = FTC.D.bar3_f or FTC.D.bar4_f;
+      alg bool Fault3 = FTC.D.bar5_f or FTC.D.bar6_f;
+      group Nominal:
+        requirement invariant .LTS.presigns.ps1.c_off needs (not Fault1 => LTS.stopsigns.K_off) and (not Fault2 => LTS.stopsigns.C_off) and (not Fault3 => LTS.stopsigns.slow_off);
+        requirement invariant .LTS.presigns.ps2.c_off needs (not Fault1 => LTS.stopsigns.K_off) and (not Fault2 => LTS.stopsigns.C_off) and (not Fault3 => LTS.stopsigns.slow_off);
+        requirement invariant .LTS.presigns.ps3.c_off needs (not Fault1 => LTS.stopsigns.K_off) and (not Fault2 => LTS.stopsigns.C_off) and (not Fault3 => LTS.stopsigns.slow_off);
+        requirement invariant .LTS.presigns.ps4.c_off needs (not Fault1 => LTS.stopsigns.K_off) and (not Fault2 => LTS.stopsigns.C_off) and (not Fault3 => LTS.stopsigns.slow_off);
+        requirement invariant .LTS.presigns.ps5.c_off needs (not Fault1 => LTS.stopsigns.K_off) and (not Fault2 => LTS.stopsigns.C_off) and (not Fault3 => LTS.stopsigns.slow_off);
+        requirement invariant .LTS.presigns.ps6.c_off needs (not Fault1 => LTS.stopsigns.K_off) and (not Fault2 => LTS.stopsigns.C_off) and (not Fault3 => LTS.stopsigns.slow_off);
+      end
+      group PostFault:
+        requirement invariant .LTS.presigns.ps1.c_off needs (Fault1 => true) and (Fault2 => false) and (Fault3 => true);
+        requirement invariant .LTS.presigns.ps2.c_off needs (Fault1 => true) and (Fault2 => false) and (Fault3 => true);
+        requirement invariant .LTS.presigns.ps3.c_off needs (Fault1 => true) and (Fault2 => false) and (Fault3 => true);
+        requirement invariant .LTS.presigns.ps4.c_off needs (Fault1 => false) and (Fault2 => true) and (Fault3 => true);
+        requirement invariant .LTS.presigns.ps5.c_off needs (Fault1 => false) and (Fault2 => true) and (Fault3 => true);
+        requirement invariant .LTS.presigns.ps6.c_off needs (Fault1 => false) and (Fault2 => true) and (Fault3 => true);
+      end
+    end
+  end
+  group function_requirements:
+    group LTS_Functional:
+      group stopsigns:
+        group stopsign1:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop1.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop1.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop1.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop1.c_off needs f_bridge => true;
+          end
+        end
+        group stopsign2:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop2.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop2.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop2.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop2.c_off needs f_bridge => true;
+          end
+        end
+        group stopsign3:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop3.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop3.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop3.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop3.c_off needs f_bridge => true;
+          end
+        end
+        group stopsign4:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop4.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop4.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop4.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop4.c_off needs f_bridge => true;
+          end
+        end
+        group stopsign5:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop5.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop5.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop5.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop5.c_off needs f_bridge => true;
+          end
+        end
+        group stopsign6:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop6.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop6.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop6.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop6.c_off needs f_bridge => true;
+          end
+        end
+        group stopsign7:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop7.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop7.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop7.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop7.c_off needs f_bridge => true;
+          end
+        end
+        group stopsign8:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.stopsigns.stop8.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.stopsigns.stop8.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.stopsigns.stop8.c_on needs f_bridge => true;
+            requirement invariant .LTS.stopsigns.stop8.c_off needs f_bridge => true;
+          end
+        end
+      end
+      group presigns:
+        group presignps1:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.presigns.ps1.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.presigns.ps1.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.presigns.ps1.c_on needs f_bridge => true;
+            requirement invariant .LTS.presigns.ps1.c_off needs f_bridge => true;
+          end
+        end
+        group presignps2:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.presigns.ps2.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.presigns.ps2.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.presigns.ps2.c_on needs f_bridge => true;
+            requirement invariant .LTS.presigns.ps2.c_off needs f_bridge => true;
+          end
+        end
+        group presignps3:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.presigns.ps3.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.presigns.ps3.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.presigns.ps3.c_on needs f_bridge => true;
+            requirement invariant .LTS.presigns.ps3.c_off needs f_bridge => true;
+          end
+        end
+        group presignps4:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.presigns.ps4.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.presigns.ps4.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.presigns.ps4.c_on needs f_bridge => true;
+            requirement invariant .LTS.presigns.ps4.c_off needs f_bridge => true;
+          end
+        end
+        group presignps5:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.presigns.ps5.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.presigns.ps5.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.presigns.ps5.c_on needs f_bridge => true;
+            requirement invariant .LTS.presigns.ps5.c_off needs f_bridge => true;
+          end
+        end
+        group presignps6:
+          alg bool f_bridge = FTC.D.bridge_f;
+          group Nominal:
+            requirement invariant .LTS.presigns.ps6.c_on needs not f_bridge => LTS.button_on.pushed;
+            requirement invariant .LTS.presigns.ps6.c_off needs not f_bridge => bridgedeck.command_close and not LTS.button_on.pushed;
+          end
+          group PostFault2:
+            requirement invariant .LTS.presigns.ps6.c_on needs f_bridge => true;
+            requirement invariant .LTS.presigns.ps6.c_off needs f_bridge => true;
+          end
+        end
+      end
+    end
+    group Barriers_Functional:
+      group barrier1:
+        alg bool command_close = barriers.command_close_leaving;
+        alg bool command_open = barriers.command_open_leaving;
+        alg bool command_stop = barriers.command_stop_leaving;
+        alg bool barrier_S_closed = barriers.barrier1.S.closed;
+        alg bool barrier_S_open = barriers.barrier1.S.open;
+        alg bool barrier_A_closing = barriers.barrier1.A.closing;
+        alg bool barrier_A_opening = barriers.barrier1.A.opening;
+        alg bool f_sc = FTC.D.bar1_f;
+        group Nominal:
+          requirement invariant .barriers.barrier1.c_close needs not f_sc => command_close and not barrier_S_closed;
+          requirement invariant .barriers.barrier1.c_stop needs not f_sc => command_stop or barrier_S_closed and barrier_A_closing or barrier_S_open and barrier_A_opening;
+          requirement invariant .barriers.barrier1.c_open needs not f_sc => (command_open or bridgedeck.command_close) and not command_close and not command_stop and not barrier_S_open;
+        end
+        group PostFault:
+          requirement invariant .barriers.barrier1.c_stop needs f_sc => true;
+          requirement invariant .barriers.barrier1.c_close needs f_sc => false;
+          requirement invariant .barriers.barrier1.c_open needs f_sc => false;
+        end
+      end
+      group barrier2:
+        alg bool command_close = barriers.command_close_entering;
+        alg bool command_open = barriers.command_open_entering;
+        alg bool command_stop = barriers.command_stop_entering;
+        alg bool barrier_S_closed = barriers.barrier2.S.closed;
+        alg bool barrier_S_open = barriers.barrier2.S.open;
+        alg bool barrier_A_closing = barriers.barrier2.A.closing;
+        alg bool barrier_A_opening = barriers.barrier2.A.opening;
+        alg bool f_sc = FTC.D.bar2_f;
+        group Nominal:
+          requirement invariant .barriers.barrier2.c_close needs not f_sc => command_close and not barrier_S_closed;
+          requirement invariant .barriers.barrier2.c_stop needs not f_sc => command_stop or barrier_S_closed and barrier_A_closing or barrier_S_open and barrier_A_opening;
+          requirement invariant .barriers.barrier2.c_open needs not f_sc => (command_open or bridgedeck.command_close) and not command_close and not command_stop and not barrier_S_open;
+        end
+        group PostFault:
+          requirement invariant .barriers.barrier2.c_stop needs f_sc => true;
+          requirement invariant .barriers.barrier2.c_close needs f_sc => false;
+          requirement invariant .barriers.barrier2.c_open needs f_sc => false;
+        end
+      end
+      group barrier3:
+        alg bool command_close = barriers.command_close_entering;
+        alg bool command_open = barriers.command_open_entering;
+        alg bool command_stop = barriers.command_stop_entering;
+        alg bool barrier_S_closed = barriers.barrier3.S.closed;
+        alg bool barrier_S_open = barriers.barrier3.S.open;
+        alg bool barrier_A_closing = barriers.barrier3.A.closing;
+        alg bool barrier_A_opening = barriers.barrier3.A.opening;
+        alg bool f_sc = FTC.D.bar3_f;
+        group Nominal:
+          requirement invariant .barriers.barrier3.c_close needs not f_sc => command_close and not barrier_S_closed;
+          requirement invariant .barriers.barrier3.c_stop needs not f_sc => command_stop or barrier_S_closed and barrier_A_closing or barrier_S_open and barrier_A_opening;
+          requirement invariant .barriers.barrier3.c_open needs not f_sc => (command_open or bridgedeck.command_close) and not command_close and not command_stop and not barrier_S_open;
+        end
+        group PostFault:
+          requirement invariant .barriers.barrier3.c_stop needs f_sc => true;
+          requirement invariant .barriers.barrier3.c_close needs f_sc => false;
+          requirement invariant .barriers.barrier3.c_open needs f_sc => false;
+        end
+      end
+      group barrier4:
+        alg bool command_close = barriers.command_close_leaving;
+        alg bool command_open = barriers.command_open_leaving;
+        alg bool command_stop = barriers.command_stop_leaving;
+        alg bool barrier_S_closed = barriers.barrier4.S.closed;
+        alg bool barrier_S_open = barriers.barrier4.S.open;
+        alg bool barrier_A_closing = barriers.barrier4.A.closing;
+        alg bool barrier_A_opening = barriers.barrier4.A.opening;
+        alg bool f_sc = FTC.D.bar4_f;
+        group Nominal:
+          requirement invariant .barriers.barrier4.c_close needs not f_sc => command_close and not barrier_S_closed;
+          requirement invariant .barriers.barrier4.c_stop needs not f_sc => command_stop or barrier_S_closed and barrier_A_closing or barrier_S_open and barrier_A_opening;
+          requirement invariant .barriers.barrier4.c_open needs not f_sc => (command_open or bridgedeck.command_close) and not command_close and not command_stop and not barrier_S_open;
+        end
+        group PostFault:
+          requirement invariant .barriers.barrier4.c_stop needs f_sc => true;
+          requirement invariant .barriers.barrier4.c_close needs f_sc => false;
+          requirement invariant .barriers.barrier4.c_open needs f_sc => false;
+        end
+      end
+      group barrier5:
+        alg bool command_close = barriers.command_close_slow;
+        alg bool command_open = barriers.command_open_slow;
+        alg bool command_stop = barriers.command_stop_slow;
+        alg bool barrier_S_closed = barriers.barrier5.S.closed;
+        alg bool barrier_S_open = barriers.barrier5.S.open;
+        alg bool barrier_A_closing = barriers.barrier5.A.closing;
+        alg bool barrier_A_opening = barriers.barrier5.A.opening;
+        alg bool f_sc = FTC.D.bar5_f;
+        group Nominal:
+          requirement invariant .barriers.barrier5.c_close needs not f_sc => command_close and not barrier_S_closed;
+          requirement invariant .barriers.barrier5.c_stop needs not f_sc => command_stop or barrier_S_closed and barrier_A_closing or barrier_S_open and barrier_A_opening;
+          requirement invariant .barriers.barrier5.c_open needs not f_sc => (command_open or bridgedeck.command_close) and not command_close and not command_stop and not barrier_S_open;
+        end
+        group PostFault:
+          requirement invariant .barriers.barrier5.c_stop needs f_sc => true;
+          requirement invariant .barriers.barrier5.c_close needs f_sc => false;
+          requirement invariant .barriers.barrier5.c_open needs f_sc => false;
+        end
+      end
+      group barrier6:
+        alg bool command_close = barriers.command_close_slow;
+        alg bool command_open = barriers.command_open_slow;
+        alg bool command_stop = barriers.command_stop_slow;
+        alg bool barrier_S_closed = barriers.barrier6.S.closed;
+        alg bool barrier_S_open = barriers.barrier6.S.open;
+        alg bool barrier_A_closing = barriers.barrier6.A.closing;
+        alg bool barrier_A_opening = barriers.barrier6.A.opening;
+        alg bool f_sc = FTC.D.bar6_f;
+        group Nominal:
+          requirement invariant .barriers.barrier6.c_close needs not f_sc => command_close and not barrier_S_closed;
+          requirement invariant .barriers.barrier6.c_stop needs not f_sc => command_stop or barrier_S_closed and barrier_A_closing or barrier_S_open and barrier_A_opening;
+          requirement invariant .barriers.barrier6.c_open needs not f_sc => (command_open or bridgedeck.command_close) and not command_close and not command_stop and not barrier_S_open;
+        end
+        group PostFault:
+          requirement invariant .barriers.barrier6.c_stop needs f_sc => true;
+          requirement invariant .barriers.barrier6.c_close needs f_sc => false;
+          requirement invariant .barriers.barrier6.c_open needs f_sc => false;
+        end
+      end
+    end
+    group Shipping_sign_Functional:
+      group sign1:
+        alg bool command_rd = shipping_signs.upstream.command_rd;
+        alg bool command_gn = shipping_signs.upstream.command_gn;
+        alg bool command_rg = shipping_signs.upstream.command_rg;
+        alg bool command_sp = shipping_signs.upstream.command_sp;
+        group Nominal:
+          requirement invariant .shipping_signs.upstream.N.c_red needs command_rd or bridgedeck.button_stop.pushed and bridgedeck.S.between;
+          requirement invariant .shipping_signs.upstream.N.c_redgreen needs command_rg;
+          requirement invariant .shipping_signs.upstream.N.c_redred needs command_sp;
+          requirement invariant .shipping_signs.upstream.N.c_green needs command_gn;
+        end
+      end
+      group sign2:
+        alg bool command_rd = shipping_signs.upstream.command_rd;
+        alg bool command_gn = shipping_signs.upstream.command_gn;
+        alg bool command_rg = shipping_signs.upstream.command_rg;
+        alg bool command_sp = shipping_signs.upstream.command_sp;
+        group Nominal:
+          requirement invariant .shipping_signs.upstream.S.c_red needs command_rd or bridgedeck.button_stop.pushed and bridgedeck.S.between;
+          requirement invariant .shipping_signs.upstream.S.c_redgreen needs command_rg;
+          requirement invariant .shipping_signs.upstream.S.c_redred needs command_sp;
+          requirement invariant .shipping_signs.upstream.S.c_green needs command_gn;
+        end
+      end
+      group sign3:
+        alg bool command_rd = shipping_signs.downstream.command_rd;
+        alg bool command_gn = shipping_signs.downstream.command_gn;
+        alg bool command_rg = shipping_signs.downstream.command_rg;
+        alg bool command_sp = shipping_signs.downstream.command_sp;
+        group Nominal:
+          requirement invariant .shipping_signs.downstream.N.c_red needs command_rd or bridgedeck.button_stop.pushed and bridgedeck.S.between;
+          requirement invariant .shipping_signs.downstream.N.c_redgreen needs command_rg;
+          requirement invariant .shipping_signs.downstream.N.c_redred needs command_sp;
+          requirement invariant .shipping_signs.downstream.N.c_green needs command_gn;
+        end
+      end
+      group sign4:
+        alg bool command_rd = shipping_signs.downstream.command_rd;
+        alg bool command_gn = shipping_signs.downstream.command_gn;
+        alg bool command_rg = shipping_signs.downstream.command_rg;
+        alg bool command_sp = shipping_signs.downstream.command_sp;
+        group Nominal:
+          requirement invariant .shipping_signs.downstream.S.c_red needs command_rd or bridgedeck.button_stop.pushed and bridgedeck.S.between;
+          requirement invariant .shipping_signs.downstream.S.c_redgreen needs command_rg;
+          requirement invariant .shipping_signs.downstream.S.c_redred needs command_sp;
+          requirement invariant .shipping_signs.downstream.S.c_green needs command_gn;
+        end
+      end
+    end
+    group Bridgedeck_Functional:
+      group nominal:
+        requirement invariant .bridgedeck.c_open needs bridgedeck.command_open and not bridgedeck.S.up;
+        requirement invariant .bridgedeck.c_close needs bridgedeck.command_close and not bridgedeck.S.closed;
+        requirement invariant .bridgedeck.c_stop needs bridgedeck.command_stop or bridgedeck.S.up and bridgedeck.A.opening or bridgedeck.S.closed and bridgedeck.A.closing;
+      end
+    end
+  end
+  group LTS:
+    plant automaton button_on:
+      location released:
+        initial;
+        marked;
+        edge .LTS.button_on.u_pushed goto pushed;
+      location pushed:
+        edge .LTS.button_on.u_released goto released;
+    end
+    group presigns:
+      alg bool C_on = ps1.on and ps2.on and ps3.on;
+      alg bool K_on = ps4.on and ps5.on and ps6.on;
+      alg bool C_onF = ps2.on and ps3.on or ps1.on and ps3.on or ps1.on and ps2.on;
+      alg bool K_onF = ps5.on and ps6.on or ps4.on and ps6.on or ps4.on and ps5.on;
+      group ps1:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.ps1_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps1.c_on goto on;
+          location on:
+            edge .LTS.presigns.ps1.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps1.u_on goto on;
+          location on:
+            edge .LTS.presigns.ps1.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps1.u_on when not f => A.on;
+            edge .LTS.presigns.ps1.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps1.u_on when f => false;
+            edge .LTS.presigns.ps1.u_off when f => true;
+        end
+      end
+      group ps2:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.ps2_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps2.c_on goto on;
+          location on:
+            edge .LTS.presigns.ps2.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps2.u_on goto on;
+          location on:
+            edge .LTS.presigns.ps2.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps2.u_on when not f => A.on;
+            edge .LTS.presigns.ps2.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps2.u_on when f => false;
+            edge .LTS.presigns.ps2.u_off when f => true;
+        end
+      end
+      group ps3:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.ps3_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps3.c_on goto on;
+          location on:
+            edge .LTS.presigns.ps3.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps3.u_on goto on;
+          location on:
+            edge .LTS.presigns.ps3.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps3.u_on when not f => A.on;
+            edge .LTS.presigns.ps3.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps3.u_on when f => false;
+            edge .LTS.presigns.ps3.u_off when f => true;
+        end
+      end
+      group ps4:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.ps4_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps4.c_on goto on;
+          location on:
+            edge .LTS.presigns.ps4.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps4.u_on goto on;
+          location on:
+            edge .LTS.presigns.ps4.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps4.u_on when not f => A.on;
+            edge .LTS.presigns.ps4.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps4.u_on when f => false;
+            edge .LTS.presigns.ps4.u_off when f => true;
+        end
+      end
+      group ps5:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.ps5_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps5.c_on goto on;
+          location on:
+            edge .LTS.presigns.ps5.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps5.u_on goto on;
+          location on:
+            edge .LTS.presigns.ps5.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps5.u_on when not f => A.on;
+            edge .LTS.presigns.ps5.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps5.u_on when f => false;
+            edge .LTS.presigns.ps5.u_off when f => true;
+        end
+      end
+      group ps6:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.ps6_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps6.c_on goto on;
+          location on:
+            edge .LTS.presigns.ps6.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.presigns.ps6.u_on goto on;
+          location on:
+            edge .LTS.presigns.ps6.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps6.u_on when not f => A.on;
+            edge .LTS.presigns.ps6.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.presigns.ps6.u_on when f => false;
+            edge .LTS.presigns.ps6.u_off when f => true;
+        end
+      end
+    end
+    group stopsigns:
+      alg bool C_on = stop1.on and stop2.on;
+      alg bool K_on = stop3.on and stop4.on;
+      alg bool SC_on = stop5.on and stop6.on;
+      alg bool SK_on = stop7.on and stop8.on;
+      alg bool C_off = stop1.off and stop2.off;
+      alg bool K_off = stop3.off and stop4.off;
+      alg bool SC_off = stop5.off and stop6.off;
+      alg bool SK_off = stop7.off and stop8.off;
+      alg bool slow_off = SC_off and SK_off;
+      alg bool C_onF = stop1.on or stop2.on;
+      alg bool K_onF = stop3.on or stop4.on;
+      alg bool SC_onF = stop5.on or stop6.on;
+      alg bool SK_onF = stop7.on or stop8.on;
+      group stop1:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s1_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop1.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop1.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop1.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop1.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop1.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop1.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop1.u_on when f => false;
+            edge .LTS.stopsigns.stop1.u_off when f => true;
+        end
+      end
+      group stop2:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s2_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop2.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop2.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop2.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop2.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop2.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop2.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop2.u_on when f => false;
+            edge .LTS.stopsigns.stop2.u_off when f => true;
+        end
+      end
+      group stop3:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s3_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop3.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop3.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop3.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop3.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop3.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop3.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop3.u_on when f => false;
+            edge .LTS.stopsigns.stop3.u_off when f => true;
+        end
+      end
+      group stop4:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s4_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop4.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop4.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop4.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop4.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop4.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop4.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop4.u_on when f => false;
+            edge .LTS.stopsigns.stop4.u_off when f => true;
+        end
+      end
+      group stop5:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s5_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop5.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop5.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop5.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop5.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop5.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop5.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop5.u_on when f => false;
+            edge .LTS.stopsigns.stop5.u_off when f => true;
+        end
+      end
+      group stop6:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s6_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop6.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop6.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop6.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop6.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop6.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop6.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop6.u_on when f => false;
+            edge .LTS.stopsigns.stop6.u_off when f => true;
+        end
+      end
+      group stop7:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s7_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop7.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop7.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop7.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop7.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop7.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop7.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop7.u_on when f => false;
+            edge .LTS.stopsigns.stop7.u_off when f => true;
+        end
+      end
+      group stop8:
+        alg bool on = A.on and S.on;
+        alg bool off = A.off and S.off;
+        alg bool f = FTC.D.s8_f;
+        plant automaton A:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop8.c_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop8.c_off goto off;
+        end
+        plant automaton S:
+          location off:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop8.u_on goto on;
+          location on:
+            edge .LTS.stopsigns.stop8.u_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop8.u_on when not f => A.on;
+            edge .LTS.stopsigns.stop8.u_off when not f => A.off;
+        end
+        plant automaton PostFaultDynamics:
+          location:
+            initial;
+            marked;
+            edge .LTS.stopsigns.stop8.u_on when f => false;
+            edge .LTS.stopsigns.stop8.u_off when f => true;
+        end
+      end
+    end
+  end
+  group barriers:
+    alg bool entering_closed = barrier2.closed and barrier3.closed;
+    alg bool leaving_closed = barrier1.closed and barrier4.closed;
+    alg bool slow_closed = barrier5.closed and barrier6.closed;
+    alg bool leaving_open = barrier1.open and barrier4.open;
+    alg bool CtoK_open = barrier3.open and barrier4.open;
+    alg bool KtoC_open = barrier1.open and barrier2.open;
+    alg bool slow_open = barrier5.open and barrier6.open;
+    alg bool all_closed = entering_closed and leaving_closed and slow_closed;
+    alg bool all_open = CtoK_open and KtoC_open and slow_open;
+    alg bool command_stop_entering = button_stop_entering.pushed;
+    alg bool command_close_entering = button_close_entering.pushed and not command_stop_entering;
+    alg bool command_open_entering = button_open_entering.pushed and not command_stop_entering and not command_close_entering;
+    alg bool command_stop_leaving = button_stop_leaving.pushed;
+    alg bool command_close_leaving = button_close_leaving.pushed and not command_stop_leaving;
+    alg bool command_open_leaving = button_open_leaving.pushed and not command_stop_leaving and not command_close_leaving;
+    alg bool command_stop_slow = button_stop_slow.pushed;
+    alg bool command_close_slow = button_close_slow.pushed and not command_stop_slow;
+    alg bool command_open_slow = button_open_slow.pushed and not command_stop_slow and not command_close_slow;
+    group barrier1:
+      alg bool open = A.rest and S.open;
+      alg bool closed = A.rest and S.closed;
+      alg bool f_sc = FTC.D.bar1_f;
+      plant automaton A:
+        location rest:
+          initial;
+          marked;
+          edge .barriers.barrier1.c_open goto opening;
+          edge .barriers.barrier1.c_close goto closing;
+        location opening:
+          edge .barriers.barrier1.c_stop goto rest;
+        location closing:
+          edge .barriers.barrier1.c_stop goto rest;
+      end
+      plant automaton S:
+        location open:
+          initial;
+          marked;
+          edge .barriers.barrier1.u_open_off goto between;
+        location between:
+          edge .barriers.barrier1.u_open_on goto open;
+          edge .barriers.barrier1.u_closed_on goto closed;
+        location closed:
+          edge .barriers.barrier1.u_closed_off goto between;
+      end
+      plant automaton NominalDynamics:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier1.u_open_off when not f_sc => A.closing;
+          edge .barriers.barrier1.u_open_on when not f_sc => A.opening;
+          edge .barriers.barrier1.u_closed_off when not f_sc => A.opening;
+          edge .barriers.barrier1.u_closed_on when not f_sc => A.closing;
+      end
+      plant automaton PostFaultDynamicsSC:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier1.u_open_off when f_sc => A.closing;
+          edge .barriers.barrier1.u_open_on when f_sc => A.opening;
+          edge .barriers.barrier1.u_closed_off when f_sc => false;
+          edge .barriers.barrier1.u_closed_on when f_sc => A.closing;
+      end
+    end
+    group barrier2:
+      alg bool open = A.rest and S.open;
+      alg bool closed = A.rest and S.closed;
+      alg bool f_sc = FTC.D.bar2_f;
+      plant automaton A:
+        location rest:
+          initial;
+          marked;
+          edge .barriers.barrier2.c_open goto opening;
+          edge .barriers.barrier2.c_close goto closing;
+        location opening:
+          edge .barriers.barrier2.c_stop goto rest;
+        location closing:
+          edge .barriers.barrier2.c_stop goto rest;
+      end
+      plant automaton S:
+        location open:
+          initial;
+          marked;
+          edge .barriers.barrier2.u_open_off goto between;
+        location between:
+          edge .barriers.barrier2.u_open_on goto open;
+          edge .barriers.barrier2.u_closed_on goto closed;
+        location closed:
+          edge .barriers.barrier2.u_closed_off goto between;
+      end
+      plant automaton NominalDynamics:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier2.u_open_off when not f_sc => A.closing;
+          edge .barriers.barrier2.u_open_on when not f_sc => A.opening;
+          edge .barriers.barrier2.u_closed_off when not f_sc => A.opening;
+          edge .barriers.barrier2.u_closed_on when not f_sc => A.closing;
+      end
+      plant automaton PostFaultDynamicsSC:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier2.u_open_off when f_sc => A.closing;
+          edge .barriers.barrier2.u_open_on when f_sc => A.opening;
+          edge .barriers.barrier2.u_closed_off when f_sc => false;
+          edge .barriers.barrier2.u_closed_on when f_sc => A.closing;
+      end
+    end
+    group barrier3:
+      alg bool open = A.rest and S.open;
+      alg bool closed = A.rest and S.closed;
+      alg bool f_sc = FTC.D.bar3_f;
+      plant automaton A:
+        location rest:
+          initial;
+          marked;
+          edge .barriers.barrier3.c_open goto opening;
+          edge .barriers.barrier3.c_close goto closing;
+        location opening:
+          edge .barriers.barrier3.c_stop goto rest;
+        location closing:
+          edge .barriers.barrier3.c_stop goto rest;
+      end
+      plant automaton S:
+        location open:
+          initial;
+          marked;
+          edge .barriers.barrier3.u_open_off goto between;
+        location between:
+          edge .barriers.barrier3.u_open_on goto open;
+          edge .barriers.barrier3.u_closed_on goto closed;
+        location closed:
+          edge .barriers.barrier3.u_closed_off goto between;
+      end
+      plant automaton NominalDynamics:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier3.u_open_off when not f_sc => A.closing;
+          edge .barriers.barrier3.u_open_on when not f_sc => A.opening;
+          edge .barriers.barrier3.u_closed_off when not f_sc => A.opening;
+          edge .barriers.barrier3.u_closed_on when not f_sc => A.closing;
+      end
+      plant automaton PostFaultDynamicsSC:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier3.u_open_off when f_sc => A.closing;
+          edge .barriers.barrier3.u_open_on when f_sc => A.opening;
+          edge .barriers.barrier3.u_closed_off when f_sc => false;
+          edge .barriers.barrier3.u_closed_on when f_sc => A.closing;
+      end
+    end
+    group barrier4:
+      alg bool open = A.rest and S.open;
+      alg bool closed = A.rest and S.closed;
+      alg bool f_sc = FTC.D.bar4_f;
+      plant automaton A:
+        location rest:
+          initial;
+          marked;
+          edge .barriers.barrier4.c_open goto opening;
+          edge .barriers.barrier4.c_close goto closing;
+        location opening:
+          edge .barriers.barrier4.c_stop goto rest;
+        location closing:
+          edge .barriers.barrier4.c_stop goto rest;
+      end
+      plant automaton S:
+        location open:
+          initial;
+          marked;
+          edge .barriers.barrier4.u_open_off goto between;
+        location between:
+          edge .barriers.barrier4.u_open_on goto open;
+          edge .barriers.barrier4.u_closed_on goto closed;
+        location closed:
+          edge .barriers.barrier4.u_closed_off goto between;
+      end
+      plant automaton NominalDynamics:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier4.u_open_off when not f_sc => A.closing;
+          edge .barriers.barrier4.u_open_on when not f_sc => A.opening;
+          edge .barriers.barrier4.u_closed_off when not f_sc => A.opening;
+          edge .barriers.barrier4.u_closed_on when not f_sc => A.closing;
+      end
+      plant automaton PostFaultDynamicsSC:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier4.u_open_off when f_sc => A.closing;
+          edge .barriers.barrier4.u_open_on when f_sc => A.opening;
+          edge .barriers.barrier4.u_closed_off when f_sc => false;
+          edge .barriers.barrier4.u_closed_on when f_sc => A.closing;
+      end
+    end
+    group barrier5:
+      alg bool open = A.rest and S.open;
+      alg bool closed = A.rest and S.closed;
+      alg bool f_sc = FTC.D.bar5_f;
+      plant automaton A:
+        location rest:
+          initial;
+          marked;
+          edge .barriers.barrier5.c_open goto opening;
+          edge .barriers.barrier5.c_close goto closing;
+        location opening:
+          edge .barriers.barrier5.c_stop goto rest;
+        location closing:
+          edge .barriers.barrier5.c_stop goto rest;
+      end
+      plant automaton S:
+        location open:
+          initial;
+          marked;
+          edge .barriers.barrier5.u_open_off goto between;
+        location between:
+          edge .barriers.barrier5.u_open_on goto open;
+          edge .barriers.barrier5.u_closed_on goto closed;
+        location closed:
+          edge .barriers.barrier5.u_closed_off goto between;
+      end
+      plant automaton NominalDynamics:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier5.u_open_off when not f_sc => A.closing;
+          edge .barriers.barrier5.u_open_on when not f_sc => A.opening;
+          edge .barriers.barrier5.u_closed_off when not f_sc => A.opening;
+          edge .barriers.barrier5.u_closed_on when not f_sc => A.closing;
+      end
+      plant automaton PostFaultDynamicsSC:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier5.u_open_off when f_sc => A.closing;
+          edge .barriers.barrier5.u_open_on when f_sc => A.opening;
+          edge .barriers.barrier5.u_closed_off when f_sc => false;
+          edge .barriers.barrier5.u_closed_on when f_sc => A.closing;
+      end
+    end
+    group barrier6:
+      alg bool open = A.rest and S.open;
+      alg bool closed = A.rest and S.closed;
+      alg bool f_sc = FTC.D.bar6_f;
+      plant automaton A:
+        location rest:
+          initial;
+          marked;
+          edge .barriers.barrier6.c_open goto opening;
+          edge .barriers.barrier6.c_close goto closing;
+        location opening:
+          edge .barriers.barrier6.c_stop goto rest;
+        location closing:
+          edge .barriers.barrier6.c_stop goto rest;
+      end
+      plant automaton S:
+        location open:
+          initial;
+          marked;
+          edge .barriers.barrier6.u_open_off goto between;
+        location between:
+          edge .barriers.barrier6.u_open_on goto open;
+          edge .barriers.barrier6.u_closed_on goto closed;
+        location closed:
+          edge .barriers.barrier6.u_closed_off goto between;
+      end
+      plant automaton NominalDynamics:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier6.u_open_off when not f_sc => A.closing;
+          edge .barriers.barrier6.u_open_on when not f_sc => A.opening;
+          edge .barriers.barrier6.u_closed_off when not f_sc => A.opening;
+          edge .barriers.barrier6.u_closed_on when not f_sc => A.closing;
+      end
+      plant automaton PostFaultDynamicsSC:
+        location:
+          initial;
+          marked;
+          edge .barriers.barrier6.u_open_off when f_sc => A.closing;
+          edge .barriers.barrier6.u_open_on when f_sc => A.opening;
+          edge .barriers.barrier6.u_closed_off when f_sc => false;
+          edge .barriers.barrier6.u_closed_on when f_sc => A.closing;
+      end
+    end
+    plant automaton button_close_entering:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_close_entering.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_close_entering.u_released goto released;
+    end
+    plant automaton button_stop_entering:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_stop_entering.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_stop_entering.u_released goto released;
+    end
+    plant automaton button_open_entering:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_open_entering.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_open_entering.u_released goto released;
+    end
+    plant automaton button_close_leaving:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_close_leaving.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_close_leaving.u_released goto released;
+    end
+    plant automaton button_stop_leaving:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_stop_leaving.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_stop_leaving.u_released goto released;
+    end
+    plant automaton button_open_leaving:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_open_leaving.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_open_leaving.u_released goto released;
+    end
+    plant automaton button_close_slow:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_close_slow.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_close_slow.u_released goto released;
+    end
+    plant automaton button_stop_slow:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_stop_slow.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_stop_slow.u_released goto released;
+    end
+    plant automaton button_open_slow:
+      location released:
+        initial;
+        marked;
+        edge .barriers.button_open_slow.u_pushed goto pushed;
+      location pushed:
+        edge .barriers.button_open_slow.u_released goto released;
+    end
+  end
+  group shipping_signs:
+    alg bool RedOrRedRed = upstream.RedOrRedRed and downstream.RedOrRedRed;
+    group upstream:
+      alg bool RedOrRedRed = N.RedOrRedRed and S.RedOrRedRed;
+      alg bool command_rd = button_red.pushed;
+      alg bool command_rg = button_redgreen.pushed and not button_red.pushed;
+      alg bool command_gn = button_green.pushed and not button_red.pushed and not button_redgreen.pushed;
+      alg bool command_sp = button_redred.pushed and not button_red.pushed;
+      plant automaton button_red:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.upstream.button_red.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.upstream.button_red.u_released goto released;
+      end
+      plant automaton button_redgreen:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.upstream.button_redgreen.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.upstream.button_redgreen.u_released goto released;
+      end
+      plant automaton button_green:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.upstream.button_green.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.upstream.button_green.u_released goto released;
+      end
+      plant automaton button_redred:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.upstream.button_redred.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.upstream.button_redred.u_released goto released;
+      end
+      group N:
+        alg bool RedOrRedRed = A.red and S_red or A.redred and S_redred;
+        alg bool S_red = S_R.on and S_G.off and S_S.off;
+        alg bool S_green = S_R.off and S_G.on and S_S.off;
+        alg bool S_redgreen = S_R.on and S_G.on and S_S.off;
+        alg bool S_redred = S_R.on and S_G.off and S_S.on;
+        plant automaton A:
+          location red:
+            initial;
+            marked;
+            edge .shipping_signs.upstream.N.c_redred goto redred;
+            edge .shipping_signs.upstream.N.c_redgreen goto redgreen;
+          location redred:
+            marked;
+            edge .shipping_signs.upstream.N.c_red goto red;
+          location redgreen:
+            edge .shipping_signs.upstream.N.c_red goto red;
+            edge .shipping_signs.upstream.N.c_green goto green;
+          location green:
+            edge .shipping_signs.upstream.N.c_red goto red;
+        end
+        plant automaton S_R:
+          alg bool init_on = true;
+          alg bool mark_on = true;
+          alg bool mark_off = false;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.upstream.N.u_red_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.upstream.N.u_red_off goto off;
+        end
+        plant automaton S_G:
+          alg bool init_on = false;
+          alg bool mark_on = false;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.upstream.N.u_green_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.upstream.N.u_green_off goto off;
+        end
+        plant automaton S_S:
+          alg bool init_on = false;
+          alg bool mark_on = true;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.upstream.N.u_red2_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.upstream.N.u_red2_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .shipping_signs.upstream.N.u_red_on when A.red or A.redgreen or A.redred;
+            edge .shipping_signs.upstream.N.u_red_off when A.green;
+            edge .shipping_signs.upstream.N.u_green_on when A.green or A.redgreen;
+            edge .shipping_signs.upstream.N.u_green_off when A.red or A.redred;
+            edge .shipping_signs.upstream.N.u_red2_on when A.redred;
+            edge .shipping_signs.upstream.N.u_red2_off when A.red or A.redgreen or A.green;
+        end
+      end
+      group S:
+        alg bool RedOrRedRed = A.red and S_red or A.redred and S_redred;
+        alg bool S_red = S_R.on and S_G.off and S_S.off;
+        alg bool S_green = S_R.off and S_G.on and S_S.off;
+        alg bool S_redgreen = S_R.on and S_G.on and S_S.off;
+        alg bool S_redred = S_R.on and S_G.off and S_S.on;
+        plant automaton A:
+          location red:
+            initial;
+            marked;
+            edge .shipping_signs.upstream.S.c_redred goto redred;
+            edge .shipping_signs.upstream.S.c_redgreen goto redgreen;
+          location redred:
+            marked;
+            edge .shipping_signs.upstream.S.c_red goto red;
+          location redgreen:
+            edge .shipping_signs.upstream.S.c_red goto red;
+            edge .shipping_signs.upstream.S.c_green goto green;
+          location green:
+            edge .shipping_signs.upstream.S.c_red goto red;
+        end
+        plant automaton S_R:
+          alg bool init_on = true;
+          alg bool mark_on = true;
+          alg bool mark_off = false;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.upstream.S.u_red_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.upstream.S.u_red_off goto off;
+        end
+        plant automaton S_G:
+          alg bool init_on = false;
+          alg bool mark_on = false;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.upstream.S.u_green_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.upstream.S.u_green_off goto off;
+        end
+        plant automaton S_S:
+          alg bool init_on = false;
+          alg bool mark_on = true;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.upstream.S.u_red2_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.upstream.S.u_red2_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .shipping_signs.upstream.S.u_red_on when A.red or A.redgreen or A.redred;
+            edge .shipping_signs.upstream.S.u_red_off when A.green;
+            edge .shipping_signs.upstream.S.u_green_on when A.green or A.redgreen;
+            edge .shipping_signs.upstream.S.u_green_off when A.red or A.redred;
+            edge .shipping_signs.upstream.S.u_red2_on when A.redred;
+            edge .shipping_signs.upstream.S.u_red2_off when A.red or A.redgreen or A.green;
+        end
+      end
+    end
+    group downstream:
+      alg bool RedOrRedRed = N.RedOrRedRed and S.RedOrRedRed;
+      alg bool command_rd = button_red.pushed;
+      alg bool command_rg = button_redgreen.pushed and not button_red.pushed;
+      alg bool command_gn = button_green.pushed and not button_red.pushed and not button_redgreen.pushed;
+      alg bool command_sp = button_redred.pushed and not button_red.pushed;
+      plant automaton button_red:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.downstream.button_red.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.downstream.button_red.u_released goto released;
+      end
+      plant automaton button_redgreen:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.downstream.button_redgreen.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.downstream.button_redgreen.u_released goto released;
+      end
+      plant automaton button_green:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.downstream.button_green.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.downstream.button_green.u_released goto released;
+      end
+      plant automaton button_redred:
+        location released:
+          initial;
+          marked;
+          edge .shipping_signs.downstream.button_redred.u_pushed goto pushed;
+        location pushed:
+          edge .shipping_signs.downstream.button_redred.u_released goto released;
+      end
+      group N:
+        alg bool RedOrRedRed = A.red and S_red or A.redred and S_redred;
+        alg bool S_red = S_R.on and S_G.off and S_S.off;
+        alg bool S_green = S_R.off and S_G.on and S_S.off;
+        alg bool S_redgreen = S_R.on and S_G.on and S_S.off;
+        alg bool S_redred = S_R.on and S_G.off and S_S.on;
+        plant automaton A:
+          location red:
+            initial;
+            marked;
+            edge .shipping_signs.downstream.N.c_redred goto redred;
+            edge .shipping_signs.downstream.N.c_redgreen goto redgreen;
+          location redred:
+            marked;
+            edge .shipping_signs.downstream.N.c_red goto red;
+          location redgreen:
+            edge .shipping_signs.downstream.N.c_red goto red;
+            edge .shipping_signs.downstream.N.c_green goto green;
+          location green:
+            edge .shipping_signs.downstream.N.c_red goto red;
+        end
+        plant automaton S_R:
+          alg bool init_on = true;
+          alg bool mark_on = true;
+          alg bool mark_off = false;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.downstream.N.u_red_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.downstream.N.u_red_off goto off;
+        end
+        plant automaton S_G:
+          alg bool init_on = false;
+          alg bool mark_on = false;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.downstream.N.u_green_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.downstream.N.u_green_off goto off;
+        end
+        plant automaton S_S:
+          alg bool init_on = false;
+          alg bool mark_on = true;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.downstream.N.u_red2_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.downstream.N.u_red2_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .shipping_signs.downstream.N.u_red_on when A.red or A.redgreen or A.redred;
+            edge .shipping_signs.downstream.N.u_red_off when A.green;
+            edge .shipping_signs.downstream.N.u_green_on when A.green or A.redgreen;
+            edge .shipping_signs.downstream.N.u_green_off when A.red or A.redred;
+            edge .shipping_signs.downstream.N.u_red2_on when A.redred;
+            edge .shipping_signs.downstream.N.u_red2_off when A.red or A.redgreen or A.green;
+        end
+      end
+      group S:
+        alg bool RedOrRedRed = A.red and S_red or A.redred and S_redred;
+        alg bool S_red = S_R.on and S_G.off and S_S.off;
+        alg bool S_green = S_R.off and S_G.on and S_S.off;
+        alg bool S_redgreen = S_R.on and S_G.on and S_S.off;
+        alg bool S_redred = S_R.on and S_G.off and S_S.on;
+        plant automaton A:
+          location red:
+            initial;
+            marked;
+            edge .shipping_signs.downstream.S.c_redred goto redred;
+            edge .shipping_signs.downstream.S.c_redgreen goto redgreen;
+          location redred:
+            marked;
+            edge .shipping_signs.downstream.S.c_red goto red;
+          location redgreen:
+            edge .shipping_signs.downstream.S.c_red goto red;
+            edge .shipping_signs.downstream.S.c_green goto green;
+          location green:
+            edge .shipping_signs.downstream.S.c_red goto red;
+        end
+        plant automaton S_R:
+          alg bool init_on = true;
+          alg bool mark_on = true;
+          alg bool mark_off = false;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.downstream.S.u_red_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.downstream.S.u_red_off goto off;
+        end
+        plant automaton S_G:
+          alg bool init_on = false;
+          alg bool mark_on = false;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.downstream.S.u_green_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.downstream.S.u_green_off goto off;
+        end
+        plant automaton S_S:
+          alg bool init_on = false;
+          alg bool mark_on = true;
+          alg bool mark_off = true;
+          location off:
+            initial not init_on;
+            marked mark_off;
+            edge .shipping_signs.downstream.S.u_red2_on goto on;
+          location on:
+            initial init_on;
+            marked mark_on;
+            edge .shipping_signs.downstream.S.u_red2_off goto off;
+        end
+        plant automaton NominalDynamics:
+          location:
+            initial;
+            marked;
+            edge .shipping_signs.downstream.S.u_red_on when A.red or A.redgreen or A.redred;
+            edge .shipping_signs.downstream.S.u_red_off when A.green;
+            edge .shipping_signs.downstream.S.u_green_on when A.green or A.redgreen;
+            edge .shipping_signs.downstream.S.u_green_off when A.red or A.redred;
+            edge .shipping_signs.downstream.S.u_red2_on when A.redred;
+            edge .shipping_signs.downstream.S.u_red2_off when A.red or A.redgreen or A.green;
+        end
+      end
+    end
+  end
+  group bridgedeck:
+    alg bool command_open = button_open.pushed and not button_stop.pushed and not button_close.pushed;
+    alg bool command_close = button_close.pushed and not button_stop.pushed;
+    alg bool command_stop = button_stop.pushed;
+    alg bool bridgedeck_up = S.up and A.stopped;
+    alg bool bridgedeck_closed = S.closed and A.stopped;
+    alg bool f_bridge = FTC.D.bridge_f;
+    plant automaton button_open:
+      location released:
+        initial;
+        marked;
+        edge .bridgedeck.button_open.u_pushed goto pushed;
+      location pushed:
+        edge .bridgedeck.button_open.u_released goto released;
+    end
+    plant automaton button_stop:
+      location released:
+        initial;
+        marked;
+        edge .bridgedeck.button_stop.u_pushed goto pushed;
+      location pushed:
+        edge .bridgedeck.button_stop.u_released goto released;
+    end
+    plant automaton button_close:
+      location released:
+        initial;
+        marked;
+        edge .bridgedeck.button_close.u_pushed goto pushed;
+      location pushed:
+        edge .bridgedeck.button_close.u_released goto released;
+    end
+    plant automaton A:
+      location stopped:
+        initial;
+        marked;
+        edge .bridgedeck.c_open goto opening;
+        edge .bridgedeck.c_close goto closing;
+      location opening:
+        edge .bridgedeck.c_stop goto stopped;
+      location closing:
+        edge .bridgedeck.c_stop goto stopped;
+    end
+    plant automaton S:
+      location closed:
+        initial;
+        marked;
+        edge .bridgedeck.u_closed_off goto between;
+      location between:
+        edge .bridgedeck.u_open_on goto up;
+        edge .bridgedeck.u_closed_on goto closed;
+      location up:
+        edge .bridgedeck.u_open_off goto between;
+    end
+    plant automaton NominalDynamics:
+      location:
+        initial;
+        marked;
+        edge .bridgedeck.u_closed_off when not f_bridge => A.opening;
+        edge .bridgedeck.u_closed_on when not f_bridge => A.closing;
+        edge .bridgedeck.u_open_on when not f_bridge => A.opening;
+        edge .bridgedeck.u_open_off when not f_bridge => A.closing;
+    end
+    plant automaton PostFaultDynamics:
+      location:
+        initial;
+        marked;
+        edge .bridgedeck.u_closed_off when f_bridge => true;
+        edge .bridgedeck.u_closed_on when f_bridge => A.closing;
+        edge .bridgedeck.u_open_on when f_bridge => A.opening;
+        edge .bridgedeck.u_open_off when f_bridge => A.closing;
+    end
+  end
+  group FTC:
+    plant automaton D:
+      disc bool ps1_f = false;
+      disc bool ps2_f = false;
+      disc bool ps3_f = false;
+      disc bool ps4_f = false;
+      disc bool ps5_f = false;
+      disc bool ps6_f = false;
+      disc bool s1_f = false;
+      disc bool s2_f = false;
+      disc bool s3_f = false;
+      disc bool s4_f = false;
+      disc bool s5_f = false;
+      disc bool s6_f = false;
+      disc bool s7_f = false;
+      disc bool s8_f = false;
+      disc bool bar1_f = false;
+      disc bool bar4_f = false;
+      disc bool bar3_f = false;
+      disc bool bar2_f = false;
+      disc bool bar5_f = false;
+      disc bool bar6_f = false;
+      disc bool bridge_f = false;
+      location a:
+        initial;
+        marked;
+        edge .FTC.D.f1 do ps1_f := true;
+        edge .FTC.D.f2 do ps2_f := true;
+        edge .FTC.D.f3 do ps3_f := true;
+        edge .FTC.D.f4 do ps4_f := true;
+        edge .FTC.D.f5 do ps5_f := true;
+        edge .FTC.D.f6 do ps6_f := true;
+        edge .FTC.D.f7 do s1_f := true;
+        edge .FTC.D.f8 do s2_f := true;
+        edge .FTC.D.f9 do s3_f := true;
+        edge .FTC.D.f10 do s4_f := true;
+        edge .FTC.D.f11 do s5_f := true;
+        edge .FTC.D.f12 do s6_f := true;
+        edge .FTC.D.f13 do s7_f := true;
+        edge .FTC.D.f14 do s8_f := true;
+        edge .FTC.D.f15 do bar1_f := true;
+        edge .FTC.D.r15 do bar1_f := false;
+        edge .FTC.D.f16 do bar4_f := true;
+        edge .FTC.D.r16 do bar4_f := false;
+        edge .FTC.D.f17 do bar3_f := true;
+        edge .FTC.D.r17 do bar3_f := false;
+        edge .FTC.D.f18 do bar2_f := true;
+        edge .FTC.D.r18 do bar2_f := false;
+        edge .FTC.D.f19 do bar5_f := true;
+        edge .FTC.D.r19 do bar5_f := false;
+        edge .FTC.D.f20 do bar6_f := true;
+        edge .FTC.D.r20 do bar6_f := false;
+        edge .FTC.D.f25 do bridge_f := true;
+    end
+  end
+  supervisor automaton sup:
+    alphabet .LTS.presigns.ps1.c_on, .LTS.presigns.ps1.c_off, .LTS.presigns.ps2.c_on, .LTS.presigns.ps2.c_off, .LTS.presigns.ps3.c_on, .LTS.presigns.ps3.c_off, .LTS.presigns.ps4.c_on, .LTS.presigns.ps4.c_off, .LTS.presigns.ps5.c_on, .LTS.presigns.ps5.c_off, .LTS.presigns.ps6.c_on, .LTS.presigns.ps6.c_off, .LTS.stopsigns.stop1.c_on, .LTS.stopsigns.stop1.c_off, .LTS.stopsigns.stop2.c_on, .LTS.stopsigns.stop2.c_off, .LTS.stopsigns.stop3.c_on, .LTS.stopsigns.stop3.c_off, .LTS.stopsigns.stop4.c_on, .LTS.stopsigns.stop4.c_off, .LTS.stopsigns.stop5.c_on, .LTS.stopsigns.stop5.c_off, .LTS.stopsigns.stop6.c_on, .LTS.stopsigns.stop6.c_off, .LTS.stopsigns.stop7.c_on, .LTS.stopsigns.stop7.c_off, .LTS.stopsigns.stop8.c_on, .LTS.stopsigns.stop8.c_off, .barriers.barrier1.c_open, .barriers.barrier1.c_close, .barriers.barrier1.c_stop, .barriers.barrier2.c_open, .barriers.barrier2.c_close, .barriers.barrier2.c_stop, .barriers.barrier3.c_open, .barriers.barrier3.c_close, .barriers.barrier3.c_stop, .barriers.barrier4.c_open, .barriers.barrier4.c_close, .barriers.barrier4.c_stop, .barriers.barrier5.c_open, .barriers.barrier5.c_close, .barriers.barrier5.c_stop, .barriers.barrier6.c_open, .barriers.barrier6.c_close, .barriers.barrier6.c_stop, .shipping_signs.upstream.N.c_redred, .shipping_signs.upstream.N.c_redgreen, .shipping_signs.upstream.N.c_red, .shipping_signs.upstream.N.c_green, .shipping_signs.upstream.S.c_redred, .shipping_signs.upstream.S.c_redgreen, .shipping_signs.upstream.S.c_red, .shipping_signs.upstream.S.c_green, .shipping_signs.downstream.N.c_redred, .shipping_signs.downstream.N.c_redgreen, .shipping_signs.downstream.N.c_red, .shipping_signs.downstream.N.c_green, .shipping_signs.downstream.S.c_redred, .shipping_signs.downstream.S.c_redgreen, .shipping_signs.downstream.S.c_red, .shipping_signs.downstream.S.c_green, .bridgedeck.c_open, .bridgedeck.c_close, .bridgedeck.c_stop;
+    location:
+      initial;
+      marked;
+      edge .barriers.barrier1.c_close when true;
+      edge .barriers.barrier1.c_open when true;
+      edge .barriers.barrier1.c_stop when true;
+      edge .barriers.barrier2.c_close when true;
+      edge .barriers.barrier2.c_open when true;
+      edge .barriers.barrier2.c_stop when true;
+      edge .barriers.barrier3.c_close when true;
+      edge .barriers.barrier3.c_open when true;
+      edge .barriers.barrier3.c_stop when true;
+      edge .barriers.barrier4.c_close when true;
+      edge .barriers.barrier4.c_open when true;
+      edge .barriers.barrier4.c_stop when true;
+      edge .barriers.barrier5.c_close when true;
+      edge .barriers.barrier5.c_open when true;
+      edge .barriers.barrier5.c_stop when true;
+      edge .barriers.barrier6.c_close when true;
+      edge .barriers.barrier6.c_open when true;
+      edge .barriers.barrier6.c_stop when true;
+      edge .bridgedeck.c_close when true;
+      edge .bridgedeck.c_open when true;
+      edge .bridgedeck.c_stop when true;
+      edge .LTS.presigns.ps1.c_off when true;
+      edge .LTS.presigns.ps1.c_on when true;
+      edge .LTS.presigns.ps2.c_off when true;
+      edge .LTS.presigns.ps2.c_on when true;
+      edge .LTS.presigns.ps3.c_off when true;
+      edge .LTS.presigns.ps3.c_on when true;
+      edge .LTS.presigns.ps4.c_off when true;
+      edge .LTS.presigns.ps4.c_on when true;
+      edge .LTS.presigns.ps5.c_off when true;
+      edge .LTS.presigns.ps5.c_on when true;
+      edge .LTS.presigns.ps6.c_off when true;
+      edge .LTS.presigns.ps6.c_on when true;
+      edge .LTS.stopsigns.stop1.c_off when true;
+      edge .LTS.stopsigns.stop1.c_on when true;
+      edge .LTS.stopsigns.stop2.c_off when true;
+      edge .LTS.stopsigns.stop2.c_on when true;
+      edge .LTS.stopsigns.stop3.c_off when true;
+      edge .LTS.stopsigns.stop3.c_on when true;
+      edge .LTS.stopsigns.stop4.c_off when true;
+      edge .LTS.stopsigns.stop4.c_on when true;
+      edge .LTS.stopsigns.stop5.c_off when true;
+      edge .LTS.stopsigns.stop5.c_on when true;
+      edge .LTS.stopsigns.stop6.c_off when true;
+      edge .LTS.stopsigns.stop6.c_on when true;
+      edge .LTS.stopsigns.stop7.c_off when true;
+      edge .LTS.stopsigns.stop7.c_on when true;
+      edge .LTS.stopsigns.stop8.c_off when true;
+      edge .LTS.stopsigns.stop8.c_on when true;
+      edge .shipping_signs.downstream.N.c_green when true;
+      edge .shipping_signs.downstream.N.c_red when true;
+      edge .shipping_signs.downstream.N.c_redgreen when true;
+      edge .shipping_signs.downstream.N.c_redred when true;
+      edge .shipping_signs.downstream.S.c_green when true;
+      edge .shipping_signs.downstream.S.c_red when true;
+      edge .shipping_signs.downstream.S.c_redgreen when true;
+      edge .shipping_signs.downstream.S.c_redred when true;
+      edge .shipping_signs.upstream.N.c_green when true;
+      edge .shipping_signs.upstream.N.c_red when true;
+      edge .shipping_signs.upstream.N.c_redgreen when true;
+      edge .shipping_signs.upstream.N.c_redred when true;
+      edge .shipping_signs.upstream.S.c_green when true;
+      edge .shipping_signs.upstream.S.c_red when true;
+      edge .shipping_signs.upstream.S.c_redgreen when true;
+      edge .shipping_signs.upstream.S.c_redred when true;
+  end
+end
